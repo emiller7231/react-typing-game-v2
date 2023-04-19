@@ -19,7 +19,7 @@ const App = () => {
 
   // Load sentence choices
   useEffect(() => {
-    fetch("/sentences.txt")
+    fetch("/react-typing-game-v2/sentences.txt")
       .then((response) => response.text())
       .then((result) => {
         const _sentences = result.split(/\r?\n/);
